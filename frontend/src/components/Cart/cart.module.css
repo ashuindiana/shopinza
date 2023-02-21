@@ -1,0 +1,146 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  padding: 0 5%;
+  width: 100%;
+  height: 12vh;
+  background: #f6f5ff;
+  display: flex;
+  align-items: center;
+  font-size: 1.7vmax;
+}
+
+.content {
+  width: 100%;
+  padding: 0 5%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin: 5vw 0 2vw 0;
+}
+
+.empty_cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  row-gap: 2vmax;
+}
+
+.text {
+  font-size: 1.5vmax;
+}
+.view_products {
+  background: #fb2e86;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 1.2vmax;
+  border: none;
+  padding: 0.4vmax 1vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.view_products:hover {
+  background: #d1035b;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0.7;
+  row-gap: 1vmax;
+}
+
+.left_header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  color: #1d3178;
+  font-size: 1.2vmax;
+}
+
+.cart_item_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vmax;
+}
+
+.right {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2vmax;
+}
+
+.right_header {
+  color: #1d3178;
+  width: 100%;
+  font-size: 1.2vmax;
+  text-align: center;
+}
+
+.totals_container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vmax;
+  background: #f4f4fc;
+  padding: 1.5vmax;
+}
+
+.totals_container > button {
+  background: #19d16f;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 0.7vmax 0;
+  font-size: 1.1vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.totals_container > button:hover {
+  background: #03aa51;
+}
+
+.total_price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #e8e6f1;
+  padding-bottom: 8px;
+  font-size: 1.2vmax;
+}
+.total_price > div:first-child {
+  color: #1d3178;
+}
+
+.total_price > div:last-child {
+  color: #15245e;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    row-gap: 3vmax;
+  }
+
+  .right {
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .right_header,
+  .totals_container {
+    max-width: 20vmax;
+  }
+}

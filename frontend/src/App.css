@@ -1,0 +1,67 @@
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.carousel .slide {
+  text-align: start !important;
+}
+
+.carousel .control-dots .dot {
+  background: #fb2e86 !important;
+  height: 5px !important;
+  width: 5px !important;
+}
+
+.carousel .carousel-status {
+  display: none !important;
+}
+
+.lato_400 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.lato_700 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.josefin_sans_400 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.josefin_sans_700 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.redColour_light {
+  color: #fb2e86 !important;
+}
+
+.redColour_dark {
+  color: #d1035b !important;
+}
+
+.greenColour_light {
+  color: #19d16f !important;
+}
+
+.greenColour_dark {
+  color: #03aa51 !important;
+}

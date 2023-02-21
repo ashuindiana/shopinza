@@ -1,0 +1,54 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  align-items: center;
+  border-bottom: 1px solid #e1e1e4;
+  width: 100%;
+  font-size: 1vmax;
+  padding-bottom: 0.8vmax;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  column-gap: 0.8vmax;
+}
+.product > img {
+  width: 30%;
+  object-fit: contain;
+  aspect-ratio: 1;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  column-gap: 2px;
+}
+
+.quantity > button {
+  width: 1.6vmax;
+  height: 1.4vmax;
+  background: #737376;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.quantity > svg {
+  cursor: pointer;
+}
+
+.quantity > input {
+  width: 1.6vmax;
+  height: 1.3vmax;
+  padding: 0 2px;
+  outline: none;
+  font-size: 1vmax;
+}
+
+.price,
+.subtotal,
+.info > a > h3 {
+  color: #15245e;
+}

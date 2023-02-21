@@ -1,0 +1,175 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  padding: 0 5%;
+  width: 100%;
+  height: 12vh;
+  background: #f6f5ff;
+  display: flex;
+  align-items: center;
+  font-size: 1.7vmax;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5vw 0 2vw 0;
+}
+
+.content {
+  width: 74%;
+  max-width: 544px;
+  background: #ffffff;
+  box-shadow: 0px 0px 25px 10px #f8f8fb;
+}
+
+.content > nav {
+  font-size: 1.8vmax;
+  padding: 2vmax 0;
+}
+
+.content > nav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.content > nav > ul > li {
+  cursor: pointer;
+}
+
+.loginForm,
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding-bottom: 2vmax;
+}
+
+.loginInput > svg,
+.signupInput > svg {
+  position: absolute;
+  font-size: 1.5vmax;
+  padding: 2vmax 0 2vmax 0.5vmax;
+}
+
+.loginInput,
+.signupInput {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 2.5vmax;
+}
+
+.loginInput > input,
+.signupInput > input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #c2c5e1;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-size: 1.2vmax;
+  color: #9096b2;
+  outline: none;
+  padding: 1.5vmax;
+  padding-left: 2.5vmax;
+}
+
+.loginInput > input:focus,
+.signupInput > input:focus {
+  outline: none;
+}
+.loginInput > input:focus::placeholder,
+.signupInput > input:focus::placeholder {
+  opacity: 0;
+}
+.loginInput > input::placeholder,
+.signupInput > input::placeholder {
+  color: #9096b2;
+  transition: all 250ms ease-in-out;
+}
+
+.loginForm > a {
+  font-size: 1.2vmax;
+  text-decoration: none;
+  width: 70%;
+  color: #9096b2;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.loginForm > a:hover {
+  color: #24293d;
+}
+
+.loginBtn,
+.signupBtn {
+  background: #fb2e86;
+  border-radius: 3px;
+  width: 70%;
+  color: #ffffff;
+  font-size: 1.2vmax;
+  border: none;
+  padding: 0.4vmax 0;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.loginBtn:hover,
+.signupBtn:hover {
+  background: #d1035b;
+}
+
+.registerImage {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.registerImage > img {
+  width: 40%;
+  border-radius: 50%;
+  padding: 1vmax 0;
+}
+
+.registerImage > input {
+  font-size: 1.2vmax;
+  display: flex;
+  padding: 0;
+}
+
+.registerImage > input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  margin: 0%;
+  font-size: 1.2vmax;
+  padding: 0.7vmax 0;
+  border-radius: 3px;
+  background: #eeeffb;
+  transition: all 0.5s;
+}
+
+.registerImage > input::file-selector-button:hover {
+  background: #b7adf5;
+}
+
+.underline {
+  height: 3px;
+  background: #151875;
+}
+
+@media screen and (min-width: 1900px) {
+  .content {
+    max-width: 1044px;
+  }
+}

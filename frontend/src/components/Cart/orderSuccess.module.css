@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  padding: 0 5%;
+  width: 100%;
+  height: 12vh;
+  background: #f6f5ff;
+  display: flex;
+  align-items: center;
+  font-size: 1.7vmax;
+}
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2vmax 0;
+  padding: 0 5%;
+  box-sizing: border-box;
+  row-gap: 1vmax;
+}
+
+.content > svg {
+  color: #19d16f;
+  font-size: 5vmax;
+}
+
+.text {
+  color: #101750;
+  font-size: 2.6vmax;
+}
+.content > a {
+  background: #fb2e86;
+  border-radius: 3px;
+  width: 70%;
+  color: #ffffff;
+  font-size: 1.2vmax;
+  border: none;
+  padding: 0.4vmax 0;
+  cursor: pointer;
+  transition: all 0.5s;
+  max-width: 20vmax;
+  text-align: center;
+}
+
+.content > a:hover {
+  background: #d1035b;
+}

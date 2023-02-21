@@ -1,0 +1,175 @@
+.container {
+  width: 100%;
+  height: 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: white;
+}
+
+.inner_container {
+  height: 100%;
+  margin: 0 5%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.5fr 2fr 1.5fr 1fr;
+  align-items: center;
+}
+
+.logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo > a {
+  color: #0d0e43;
+  font-size: 1.4em;
+}
+
+.navBar_container {
+  height: 100%;
+}
+
+.navBar {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3vw;
+  font-size: 1em;
+  padding: 0;
+  height: 100%;
+}
+
+.navBar > a {
+  color: #0d0e43;
+}
+
+.nav_mobile {
+  display: none;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  flex: 0.4;
+  width: 100%;
+  height: 100%;
+}
+
+.search_input {
+  border: 1px solid #e7e6ef;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 8px 0 0 8px;
+  padding: 1px 8px;
+}
+
+.search_input:focus {
+  outline: none;
+}
+.search_input:focus::placeholder {
+  opacity: 0;
+}
+.search_input::placeholder {
+  color: #bababa;
+  transition: all 250ms ease-in-out;
+}
+
+.search_icon {
+  background-color: #fb2e86;
+  color: white;
+  height: 30px !important;
+  border-radius: 0 8px 8px 0;
+  padding: 6px 5px;
+  font-size: 25px !important;
+  cursor: pointer;
+}
+
+.user_details {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.account {
+  color: #0d0e43;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.account > img {
+  width: 3.5vmax;
+  border-radius: 50%;
+  max-width: 58px;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+}
+
+.cart {
+  cursor: pointer;
+  color: #0d0e43;
+}
+
+@media only screen and (max-width: 1024px) {
+  .inner_container {
+    grid-template-columns: 0.25fr 0.5fr 1fr 1fr;
+  }
+
+  .logo {
+    grid-column: 2/3;
+  }
+
+  .navBar {
+    display: none;
+  }
+  .nav_mobile {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    height: 7rem;
+  }
+
+  .inner_container {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0.25fr 0.5fr 1fr;
+    row-gap: 10px;
+  }
+
+  .logo {
+    align-items: end;
+  }
+
+  .searchBar {
+    grid-row: 2;
+    grid-column: 1/4;
+  }
+
+  .user_details {
+    align-items: end;
+    justify-content: end;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .inner_container {
+    grid-template-columns: 0.25fr 0.5fr 0.5fr;
+  }
+
+  .userName {
+    display: none;
+  }
+
+  .account {
+    padding-bottom: 2px;
+  }
+}

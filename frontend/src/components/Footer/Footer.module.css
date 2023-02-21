@@ -1,0 +1,114 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  width: 100%;
+  background: #eeeffb;
+}
+
+.upper {
+  background: #eeeffb;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+.footer_group {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  row-gap: 18px;
+}
+
+.title {
+  font-family: Josefin Sans;
+  font-size: 22px;
+  margin-bottom: 2px;
+}
+
+.signup {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.signup > input {
+  width: 70%;
+  height: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 1px 8px;
+}
+
+.signup > button {
+  width: 30%;
+  background: #fb2e86;
+  outline: none;
+  border: none;
+  color: #eeeffb;
+  height: 2rem;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer_item,
+.contact {
+  color: #8a8fb9;
+}
+
+.lower {
+  background: #e7e4f8;
+  padding: 5px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-size: 16px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .upper {
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 20px;
+    justify-content: start;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .footer_item,
+  .contact,
+  .signup > input,
+  .signup > button {
+    font-size: 12px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer_item,
+  .contact,
+  .signup > input,
+  .signup > button {
+    font-size: 10px;
+  }
+}
