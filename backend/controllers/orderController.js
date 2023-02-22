@@ -1,6 +1,6 @@
 const Order = require("../models/order");
 const Product = require("../models/product");
-const Errorhandler = require("../utils/errorhandler");
+const Errorhandler = require("../Utils/errorHandler");
 const catchAsyncErrors = require("../middleware/catchAsyncError");
 
 // Create new Order
